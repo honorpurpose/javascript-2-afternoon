@@ -14,9 +14,14 @@
   Then alert your name using dot notation.
 */
 
+
 //Code here
+const me = {
+  name: 'Brockston',
+  age: 23
+}
 
-
+alert(me);
 
 ////////// PROBLEM 2 //////////
 
@@ -26,7 +31,14 @@
 */
 
 //Code here
-
+const favoriteThings = {
+  band: 'The Piano Guys',
+  food: 'Brocolli',
+  person: 'Steffani',
+  book: 'Narnia',
+  movie: 'August Rush',
+  holiday: 'Christmas'
+}
 
 
 /*
@@ -34,7 +46,8 @@
 */
 
 //Code here
-
+favoriteThings.car = 'Lambo';
+favoriteThings.brand = 'Apple'
 
 
 /*
@@ -42,7 +55,8 @@
 */
 
 //Code here
-
+favoriteThings.food = 'Chicken Nuggets';
+favoriteThings.book = 'Harry Potter';
 
 
 ////////// PROBLEM 3 //////////
@@ -56,7 +70,10 @@
 */
 
 //Code here
+let backPack = {};
 
+const item = 'firstPocket';
+backPack[item] = 'chapstick';
 
 
 /*
@@ -64,7 +81,7 @@
 */
 
 //Code here
-
+alert(backPack);
 
 
 /*
@@ -74,7 +91,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
-
+console.log (backPack)
 
 
 ////////// PROBLEM 4 //////////
@@ -98,8 +115,8 @@ var user2 = {
 
 //Code Here
 
-
-
+user2.name = 'Tyler S. McGinnis';
+user2.email = 'tyler.mcginnis@devmounta.in'
 
 
 
@@ -120,7 +137,7 @@ var user2 = {
 */
 
 //Code Here
-
+const methodCollection = {}
 
 
 /*
@@ -129,7 +146,13 @@ var user2 = {
 */
 
 //Code Here
+methodCollection.alertHello = function () {
+  alert('hello')
+};
 
+methodCollection.logHello = function () {
+  console.log ('hello')
+}
 
 
 /*
@@ -137,7 +160,8 @@ var user2 = {
 */
 
 //Code Here
-
+methodCollection.alertHello();
+methodCollection.logHello();
 
 
 ////////// PROBLEM 6 //////////
@@ -148,6 +172,15 @@ var user2 = {
 */
 
 //Code Here
+const makePerson = (name, birthday, ssn) => {
+  const newObj = {
+    name: name,
+    birthday: birthday,
+    ssn: ssn
+  }
+
+  return newObj;
+};
 
 
 
@@ -160,4 +193,13 @@ var user2 = {
 
 //Code Here
 
+const makeCard = (cardNumber, expirationDate, securityCode) => {
+  const newCard = {
+    cardNumber: cardNumber,
+    expirationDate: expirationDate,
+    securityCode: securityCode
+  }
+
+  return newCard;
+}
 
